@@ -1,0 +1,61 @@
+<!-- Romika Chaudhary
+BMI Calculator: Day-13
+Feb 16, 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Body Mass Index Calculator</h1>
+    </div>
+    <div class="container">
+        <div class="userInput">
+            <h3 class="unit">Units</h3> 
+            <input type="text" id="unit" name="unit">
+
+            <h3 class="weight">Weight</h3>
+            <input type="text" id="weight" name="weight" placeholder="Weight in pounds">
+            <h3 class="height">Height</h3>
+            <input type="text" id="ft" name="feet" placeholder="Height in feet">
+            <input type="text" id="inch" name="inches" placeholder="Height in inches">
+        </div>
+
+        <div id="bmiMeasured">
+            <div class="bmi">
+                <button id="submit">Your BMI: </button> 
+            </div>
+            <div class="bmi2">
+                <input type="text" id="result" name="bmi2">
+
+            </div>
+        </div>
+
+        <div id="bmiChart">
+            <div class="wt1">
+                <p>Underweight</p>
+                <p> < 18</p>
+            </div>
+            <div class="wt2">
+                <p>Normal weight</p>
+                <p>18.5 - 25</p>
+            </div>
+            <div class="wt3">
+                <p>Overweight</p>
+                <p>25 - 30</p>
+            </div>
+            <div class="wt4">
+                <p>Obese</p>
+                <p>> 30</p>
+            </div>
+        </div>
+</div>
+    
+<script src="bmi.js"></script>
+</body>
+</html>

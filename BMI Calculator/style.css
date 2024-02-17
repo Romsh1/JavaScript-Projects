@@ -1,0 +1,123 @@
+/* Romika Chaudhary
+BMI Calculator: Day-13
+Feb 16, 2024 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    color: black;
+}
+
+.title {
+    background-color: gold;
+    margin: auto;
+    padding: 0%;
+    width: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    background-color: palevioletred;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.userInput {
+    margin: auto;
+    padding: 10px;
+    height: fit-content;
+    width: 450px;
+    border-radius: 3px;
+    background-color: rgb(245, 118, 118);
+    color: #fff;
+    align-items: center;
+}
+
+#bmiMeasured {
+    display: flex;
+    gap: 0.5rem;
+    margin: 10px;
+    align-items: center;
+}
+
+#submit {
+    background-color: red;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.bmi p {
+    text-align: center;
+}
+
+#result{
+    background-color: green;
+    height: 50px;
+    width: 320px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    border: 1px solid green;
+}
+
+#bmiChart {
+    display: flex;
+    gap: 0.5rem;
+    margin: 10px;
+    align-items: center;
+}
+
+.wt1 {
+    background-color: rgb(205, 205, 12);
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.25rem;
+}
+
+.wt2 {
+    background-color: green;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.25rem;
+}
+
+.wt3 {
+    background-color: orange;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.25rem;
+}
+
+.wt4 {
+    background-color: red;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.25rem;
+}
