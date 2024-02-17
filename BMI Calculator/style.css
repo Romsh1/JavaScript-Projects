@@ -2,7 +2,56 @@
 BMI Calculator: Day-13
 Feb 16, 2024 */
 
-* {
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: skyblue;
+}
+
+h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 185px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span {
+    color: red;
+}
+
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77)0px 20px 30px -10px;
+
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    background: black;
+    display: block;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -21,7 +70,7 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container {
+#container {
     background-color: palevioletred;
     height: 300px;
     width: 500px;
@@ -120,4 +169,4 @@ h1 {
     color: #fff;
     border-radius: 3px;
     font-size: 1.25rem;
-}
+} */

@@ -11,24 +11,52 @@ Feb 16, 2024 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>BMI Calculator</h1>
+    <div class="wrapper">
+        <p>Height in CM:
+            <input type="text" id="height"><br><span id="height_error"></span>
+        </p>
+        <p>Weight in KG:
+            <input type="text" id="weight"><br><span id="weight_error"></span>
+        </p>
+
+        <button id="btn">Calculate</button>
+        <p id="output"></p>
+    </div>
+  
+<script src="bmi.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="title">
         <h1>Body Mass Index Calculator</h1>
     </div>
-    <div class="container">
+    <form id="container">
         <div class="userInput">
             <h3 class="unit">Units</h3> 
-            <input type="text" id="unit" name="unit">
+            <input type="text" id="unit" name="unit"> -->
 
-            <h3 class="weight">Weight</h3>
-            <input type="text" id="weight" name="weight" placeholder="Weight in pounds">
+            <!-- <h3 class="weight">Weight</h3>
+            <input type="text" id="weight" name="weight" placeholder="Weight in kg">
             <h3 class="height">Height</h3>
-            <input type="text" id="ft" name="feet" placeholder="Height in feet">
-            <input type="text" id="inch" name="inches" placeholder="Height in inches">
-        </div>
+            <input type="text" id="height" name="height" placeholder="Height in cm"> -->
+            <!-- <input type="text" id="inch" name="inches" placeholder="Height in inches"> -->
+        <!-- </div>  -->
 
-        <div id="bmiMeasured">
+        <!-- <div id="bmiMeasured">
             <div class="bmi">
-                <button id="submit">Your BMI: </button> 
+                <button type="submit" id="submit">Your BMI: </button> 
             </div>
             <div class="bmi2">
                 <input type="text" id="result" name="bmi2">
@@ -53,9 +81,9 @@ Feb 16, 2024 -->
                 <p>Obese</p>
                 <p>> 30</p>
             </div>
-        </div>
+    </form>
 </div>
     
 <script src="bmi.js"></script>
-</body>
-</html>
+</body> -->
+<!-- </html>  -->
