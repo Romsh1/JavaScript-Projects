@@ -1,0 +1,37 @@
+/* Romika Chaudhary
+Feb 18, 2024
+Day 15 */
+
+
+body {
+    background-color: wheat;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid black;
+    margin: auto;
+    padding: 30px;
+    width: fit-content;
+    height: max-content;
+    margin-top: 15%;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.submit {
+    margin: auto;
+    align-items: center;
+}
+
+#submit {
+    background-color: skyblue;
+    color: #fff;
+    font-size: 1rem;
+    border: 2px solid black;
+    cursor: pointer;
+}
