@@ -17,7 +17,7 @@ btn.addEventListener('click', () => {
 
 
     //Displaying message using backticks
-    // msg.innerHTML = `You have added ${addItems.value} to your list.`;
-    // console.log(addItems.value);
+    msg.innerHTML = `You have added ${addItems.value} to your list.`;
+    console.log(addItems.value);
 
 });
