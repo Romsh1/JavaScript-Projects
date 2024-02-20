@@ -9,15 +9,14 @@ Day 15 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <div class="container">
         <h2>Grocery Bud</h2>
-        <form class="myForm">
-            <p class="submit">
-                <input type="text" id="items" name="items" placeholder="e.g. Apple">
-                <button id="submit" type="button">Submit</button>
-            </p>
+        <form id="myForm">
+            <input type="text" id="items" placeholder="e.g. Apple">
+            <button id="submit" type="submit">Submit</button>
             <p id="result"></p>
         </form>
     </div>
