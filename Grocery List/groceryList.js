@@ -28,8 +28,6 @@ let formValidation = () => {
 };
 
 let acceptData = () => {
-    // data["text"] = items.value;
-    // console.log(data);
     addItems();
 };
 
