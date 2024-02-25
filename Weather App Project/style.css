@@ -1,0 +1,139 @@
+body{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    color: #fff;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.app-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.search-weather {
+    position: relative;
+}
+
+.search-weather i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.weather_temp {
+    font-size: 1.5rem;
+}
+
+.weather_temp span {
+    cursor: pointer;
+}
+
+.weather_temp span:first-child {
+    margin-right: 0.5rem;
+}
+
+.weather_whole {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.weather_dateNtime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.forecast_weather {
+    background-color: #1e1e1e;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.icon_weather img {
+    width: 100px;
+}
+
+.weather_temperature {
+    font-size: 1.75rem;
+}
+
+.minMax_weather {
+    display: flex;
+    justify-content: center;
+}
+
+.minMax_weather p {
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.information_weather{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.card_weather {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card_weather i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.card_weather p {
+    font-size: 14px;
+}
+
+@media(max-width: 936px){
+    .container{
+        width: 90%;
+    }
+
+    .app-title {
+        flex-direction: column;
+    }
+
+    .weather_temp  {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:400px){
+    .information_weather {
+        grid-template-columns: none;
+    }
+}
+
+
