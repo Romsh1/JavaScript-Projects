@@ -114,7 +114,6 @@ input::placeholder {
     margin: 0%;
 }
 
-/* CSS Rules for */
 .information_weather{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -156,6 +155,10 @@ input::placeholder {
 
 .weather_gauge {
     margin: 7px;
+}
+
+.weather_wind {
+    position: relative;
 }
 
 /* CSS Rules for making screen responsive*/

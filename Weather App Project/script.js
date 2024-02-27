@@ -10,7 +10,7 @@ let units = "metric";
 let city = document.querySelector(".weather_search_city");
 let dateTime = document.querySelector(".weather_dateNtime");
 let weatherForecast = document.querySelector(".forecast_weather");
-let weather_temperature = document.querySelector(".weather_temperature");
+let weatherTemperature = document.querySelector(".weather_temperature");
 let weatherIcon = document.querySelector(".icon_weather");
 let weatherMinMax = document.querySelector(".minMax_weather");
 let weatherFeelsLike = document.querySelector(".weather_feels_like");
@@ -86,7 +86,11 @@ function convertCountryCode(country) {
 //Main function with API call
 function getWeather() {
     const API_KEY = 'b0bd8bbd5f515361fdc416b758befdc5';
-
+    //Validation if user input for city is not entered
+    if(!curr_city){
+        alert("Please enter a city!");
+        return;
+    }
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${curr_city}&appid=${API_KEY}&units=${units}`)
     .then(res => {
         if (!res.ok) {
@@ -96,11 +100,11 @@ function getWeather() {
     })
     .then(data => {
         console.log(data);
-        // Process the received data
+        //Process the received data
         city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`;
         dateTime.innerHTML = convertTimeStamp(data.dt, data.timezone);
         weatherForecast.innerHTML = `<p>${data.weather[0].main}</p>`;
-        weather_temperature.innerHTML = `${data.main.temp.toFixed()}${units === "imperial" ? "&#176F" : "&#176C"}`;
+        weatherTemperature.innerHTML = `${data.main.temp.toFixed()}${units === "imperial" ? "&#176F" : "&#176C"}`;
         weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Icon"/>`;
         weatherMinMax.innerHTML = `<p>H: ${data.main.temp_min.toFixed()}&#176 </p>
                                     <p>L: ${data.main.temp_max.toFixed()}&#176 </p>`;
@@ -108,7 +112,7 @@ function getWeather() {
         weatherHumidity.innerHTML = `${data.main.humidity}%`;
         weatherWind.innerHTML = `${data.wind.speed}${units === "imperial" ? "mph" : "m/s"}`;
         weatherPressure.innerHTML = `${data.main.pressure}hpa`;
-    })
+})
     .catch(error => {
         console.error('Error fetching weather data:', error);
         if (error.message === 'City not found') {
