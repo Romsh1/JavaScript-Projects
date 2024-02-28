@@ -17,6 +17,7 @@ let weatherFeelsLike = document.querySelector(".weather_feels_like");
 let weatherHumidity = document.querySelector(".weather_humidity");
 let weatherWind = document.querySelector(".weather_wind");
 let weatherPressure = document.querySelector(".weather_gauge");
+let loadStatus = document.querySelector(".loading");
 
 //Search functionality
 document.querySelector(".search-weather").addEventListener
@@ -26,9 +27,6 @@ document.querySelector(".search-weather").addEventListener
     e.preventDefault();
     //Changes current city according to the value entered
     curr_city = search.value;
-    // if(search.value === ""){
-    //     alert("Please enter a city name");
-    // }
     //Gets the weather forecast
     getWeather();
     //Clearing input text box after each search
@@ -85,6 +83,9 @@ function convertCountryCode(country) {
 
 //Main function with API call
 function getWeather() {
+    //Showing loading message
+    loadStatus.style.display = 'block';
+
     const API_KEY = 'b0bd8bbd5f515361fdc416b758befdc5';
     //Validation if user input for city is not entered
     if(!curr_city){
@@ -100,7 +101,7 @@ function getWeather() {
     })
     .then(data => {
         console.log(data);
-        //Process the received data
+        //Processing the received data
         city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`;
         dateTime.innerHTML = convertTimeStamp(data.dt, data.timezone);
         weatherForecast.innerHTML = `<p>${data.weather[0].main}</p>`;
@@ -112,13 +113,19 @@ function getWeather() {
         weatherHumidity.innerHTML = `${data.main.humidity}%`;
         weatherWind.innerHTML = `${data.wind.speed}${units === "imperial" ? "mph" : "m/s"}`;
         weatherPressure.innerHTML = `${data.main.pressure}hpa`;
-})
+
+        //Hiding loading message after data is fetched
+        loadStatus.style.display = 'none';
+    })
     .catch(error => {
         console.error('Error fetching weather data:', error);
         if (error.message === 'City not found') {
             alert("Invalid city name!");
         }
+        //Hiding loading message in case of error
+        loadStatus.style.display = 'none';
     });
 }
+
 //After the doc will be fully loaded and parsed, getWeather() function will be called
 document.addEventListener("DOMContentLoaded", getWeather);
