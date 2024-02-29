@@ -33,5 +33,6 @@ Day 25, 26 */
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
