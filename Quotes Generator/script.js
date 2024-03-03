@@ -2,6 +2,8 @@
 // Feb 28, 2024
 // Day 25, 26
 
+
+
 let button = document.querySelector(".btn");
 let myQuotes = document.querySelector(".quotes");
 
