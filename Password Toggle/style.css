@@ -1,0 +1,23 @@
+/* Romika Chaudhary
+March 10, 2024
+Day 33 */
+
+.password_gen {
+    margin-top: 15%;
+    margin-left: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    max-width: fit-content;
+    box-shadow: 5px 10px 18px black;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#userInput {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 28px;
+}
