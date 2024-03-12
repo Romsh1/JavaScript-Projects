@@ -12,21 +12,11 @@ Day 34-->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="player">
-        <audio src="audio/Dandelions.mp3" id="music" preload="auto"></audio>
-        <div class="info">
-            <div class="left">
-                <span class="artist">Ruth</span>
-                <span class="title">Dandelions</span>
-            </div>
-            <div class="right">
-                <span class="time">00:00:00</span>
-            </div>
-        </div>
-        <div class="controls">
-            <div class="play">&#9654;</div>
-            <div class="pause">||</div>
-        </div>
+    <div class="audio-player">
+        <audio controls>
+            <source src="audio/Dandelions.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </div>
     
 <script src="script.js"></script>

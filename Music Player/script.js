@@ -2,8 +2,15 @@
 // C0921918
 // March 10, 12 2024
 
-var audio = document.getElementById("music");
-var time = document.querySelector(".time");
+const audio = document.querySelector("audio");
 
-document.querySelector(".play").addEventListener("click", play);
-document.querySelector(".pause").addEventListener("click", pause);
+const playButton = document.getElementById("play-button");
+const pauseButton = document.getElementById("pause-button");
+
+playButton.addEventListener("click", () => {
+    audio.play();
+});
+
+pauseButton.addEventListener("click", () => {
+    audio.pause();
+});
