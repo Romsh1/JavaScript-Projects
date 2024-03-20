@@ -1,0 +1,14 @@
+/* Romika Chaudhary
+Day 40 - Image Changer
+March 19, 2024 */
+
+#image-container {
+    margin: auto;
+    padding: 10px;
+}
+
+.random {
+    max-width: max-content;
+    max-height: max-content;
+    overflow: hidden;
+}
